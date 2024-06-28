@@ -1,52 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins' , 'sans-serif';
+    font-family: "Poppins",sans-serif;
+    scroll-behavior: smooth;
+}
 
-}
 body{
-    color: #ededed;
+    background: #111;
+    color: white;
 }
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: transparent;
+
+header nav{
+    height: 15vh;
+    width: 70%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+
 
 }
-.logo{
-    position: relative;
-    font-size: 25px;
-    color: #fff;
+
+header h1{
+    font-size: 45px;
+    color: crimson;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+
+}
+
+header ul{
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+
+
+}
+
+header a{
+    display: block;
+    color: white;
     text-decoration: none;
-    font-weight: 600;
-
-}
-.navbar a{
-    display: inline-block;
-    font-size: 25px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
-
-}
-.navbar a:hover{
-    color: #0ef;
-}
-.home{
+    border-radius: -2rem;
+    padding: .5rem 1rem;
+    transition: .2s ease-in;
+    border-bottom: 2px solid crimson;
+    overflow: hidden;
     position: relative;
+
+
+
+}
+
+header a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
-    justify-content: space-between;
-    height: 100vh;
-    background: url("resources/Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png");
+    height: 100%;
+    border-radius: .1rem;
+    z-index: -1;
+    transition: .2s ease-in;
+    transform: translateX(-101%);
+    background: crimson;
 
+}
+
+header a:hover::before{
+    transform:translateX(0) ;
+}
+
+header ul li:nth-child(1) a{
+    background: crimson;
+    color: white;
+}
+
+#btn{
+    all: unset;
+    cursor: pointer;
+    transition: .5s ease-out;
+    font-size: 30px;
+    display: none;
+}
+
+#btn:hover{
+    transform: rotate(180deg);
+    color: crimson;
+
+
+}
+
+/* s.container */
+/* s.container */
+s.container{
+    min-height: 80vh;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.icons{
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+.icons .line{
+    height: 40px;
+    width: 3.5px;
+    border-radius: 5rem;
+    background: white;
+
+}
+
+.icons a{
+    font-size: 20px;
+    color: #eee;
+    background: crimson;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition:.1s ease-in ;
+
+} 
+img{
+    width: 200px;
 }
