@@ -417,21 +417,81 @@ title span{
     text-align: center;
 }
 
+.contact .footer p{
+    font-size: 40px;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 2rem;
+    position: relative;
 
+}
 
+.contact .footer p::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 330px;
+    height: 2px;
+    background: white;
+    border-radius: 1rem;
 
+}
 
+.contact .footer a{
+    text-decoration: none;
+    background: crimson;
+    color: #eee;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding:1rem 2rem;
+    transition: .2s ease-in;
 
+}
 
+.contact .footer a:hover{
+    transform: scale(1.05);
 
-
-
+}
 
 
 
 /*Contact */
 
+.back-top{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #222;
+    background: crimson;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.8);
+    transition: .4s ease-out;
+    opacity: 0;
+    pointer-events: none;
 
+}
+
+.back-top:hover{
+    transform: translateY(-20px);
+
+}
+
+.back-top.active{
+    opacity: 1;
+    pointer-events: auto;
+
+}
 
 
 
