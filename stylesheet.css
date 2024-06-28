@@ -98,7 +98,7 @@ header ul li:nth-child(1) a{
 }
 
 /* s.container */
-/* s.container */
+
 s.container{
     min-height: 80vh;
     width: 70%;
@@ -142,6 +142,308 @@ s.container{
     transition:.1s ease-in ;
 
 } 
+
+.icons a:hover{
+    transform: scale(1.1);
+
+}
+
+.header h3{
+    font-size: 25px;
+    color: crimson;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: -1rem;
+}
+
+.header h1{
+    font-size: 50px;
+    position: relative;
+    margin-bottom: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+}
+
+.header h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 5px;
+    border-radius: 5rem;
+    background: crimson;
+    border-radius: 1rem;
+}
+
+.image{
+    width: 320px;
+    height: 320px;
+
+}
+
+
+.image img{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
 img{
     width: 200px;
 }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+}
+
+.title{
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 3.3rem;
+    margin-bottom: 1rem;
+}
+
+title span{
+    font-weight: 700;
+
+}
+
+.subtitle{
+    letter-spacing: 2px;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+
+.description{
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+    color: #dfdfdf;
+    width: 85%;
+
+}
+
+.buttons{
+    display: flex;
+    gap:1rem;
+    margin-top: 1rem;
+
+}
+
+.buttons a {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: black;
+    padding: .8rem 1.6rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: .3s ease-out;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.4);
+
+}
+
+.buttons a:hover{
+    transform: scale(1.05);
+    color: white;
+}
+
+.buttons a{
+    text-decoration: none;
+    background: crimson;
+    color: white;
+
+}
+
+.buttons a:nth-child(2){
+    text-decoration: none;
+    background-color: white;
+    color: #111;
+    
+}
+
+.buttons button:hover{
+    color: crimson;
+}
+
+.buttons a:nth-child(2):hover{
+    background-color: crimson;
+    color: white;
+}
+
+/* s.container */
+
+/*Projects Section*/
+
+
+.project-section{
+    margin-top: 80px;
+
+}
+
+.project-section .wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    max-width: 1000px;
+    width: 80%;
+    height: 100%;
+    margin: 30px auto 0 auto ;
+
+}
+
+.project-card{
+    background:#d0d0;
+    border-radius: 1rem;
+    max-width: 450px;
+
+}
+
+.project-image-container{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.project-image{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    transition: .2s ease-in-out;
+
+
+}
+
+.project-image:hover{
+    transform: scale(1.05);
+}
+
+.project-content{
+    border-radius: 0 0 10px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3rem;
+
+}
+
+.project-content > p{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: pre-wrap;
+}
+
+.check-project{
+    display: flex;
+    gap: 1rem;
+}
+
+.check-project a{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.check-project a:hover{
+    color: crimson;
+
+}
+
+/*Contact */
+
+.contact{
+    position: relative;
+    display: flex;
+    font-size: 2em;
+    min-height: 100vh;
+    padding-block: 2rem;
+}
+
+.contact .container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .wrapper{
+    font-size: 30px;
+}
+
+.contact .wrapper .grp{
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact .grp:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+
+.contact .grp{
+    font-size: 40px;
+    margin-right: 1rem;
+}
+
+.contact .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Contact */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Projects Section*/
+
