@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My - Portfolio</title>
-    <!-- font awesome -->
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CSS Link -->
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
@@ -18,57 +16,53 @@
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <button id="btn">
+            <button id="menu-btn">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
     </header>
-    <div class="icons">
+    <div class="social-icons">
         <a href="#">
             <i class="fa-brands fa-github"></i>
-            </a>
-            <div class="line"> 
-            </div>
-            <a href="#">
+        </a>
+        <div class="line"></div>
+        <a href="#">
             <i class="fa-brands fa-linkedin-in"></i>
         </a>
-
     </div>
-    <section>
-        <div class="s-container" id="s-container">
+    <section class="intro">
+        <div class="container">
             <div class="content">
                 <span class="subtitle">Hello</span>
                 <h1 class="title">
                     I'm <span>Senthee <br></span> a Frontend Developer
                 </h1>
-                <p class="desc">
-                    Welcome to my frontend development realm! I'm Senthee , a dedicated and innovative frontend developer with a penchant for crafting sleek and user-friendly interfaces. throughout my journey in coding, I've delved into a multitude of projects , spanning from polished web application to captivating website design
+                <p class="description">
+                    Welcome to my frontend development realm! I'm Senthee, a dedicated and innovative frontend developer with a penchant for crafting sleek and user-friendly interfaces. Throughout my journey in coding, I've delved into a multitude of projects, spanning from polished web applications to captivating website design.
                 </p>
                 <div class="buttons">
                     <a href="#">About Me</a>
                     <a href="#">Portfolio</a>
                 </div>
             </div>
-            <div class="image">
+            <div class="profile-image">
                 <img src="./img/20231223_145512.jpg" alt="Me">
             </div>
-            
         </div>
     </section>
-
-    <div class="projects-section" id="projects">
-        <div class="header">
+    <section class="projects" id="projects">
+        <div class="section-header">
             <h3>Projects</h3>
             <h1>Some of My Work</h1>
         </div>
-        <div class="wrapper">
+        <div class="projects-wrapper">
             <div class="project-card">
                 <div class="project-image-container">
                     <img src="./img/1.png" alt="Project" class="project-image">
                 </div>
                 <div class="project-content">
-                    <h3>ECommerce Web using Html,CSS,JS only</h3>
-                    <div class="check-project">
+                    <h3>ECommerce Web using HTML, CSS, JS only</h3>
+                    <div class="project-links">
                         <a href="#" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
@@ -79,37 +73,32 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="contact" id="contact">
+    </section>
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="header">
+            <div class="section-header">
                 <h3>Contact</h3>
-                <h1>Reach Me out via:</h1>
+                <h1>Reach Me Out Via:</h1>
             </div>
-            <div class="wrapper">
-                <div class="grp">
+            <div class="contact-wrapper">
+                <div class="contact-info">
                     <i class="fa-solid fa-paper-plane"></i>
                     <span>esentheepan@gmail.com</span>
                 </div>
-                <div class="grp">
+                <div class="contact-info">
                     <i class="fa-brands fa-linkedin-in"></i>
                     <span>https://www.linkedin.com/in/sentheepan-ellankovan-686120288/overlay/about-this-profile/esentheepan@gmail.com</span>
                 </div>
-                
-              <div class="footer">
+            </div>
+            <div class="footer">
                 <p>Let's talk about a project</p>
-                <a href="mailto@esentheepan@gmail.com">
+                <a href="mailto:esentheepan@gmail.com">
                     Hire Me <i class="fa-solid fa-envelope"></i>
                 </a>
-
-              </div>
             </div>
-
         </div>
-    </div>
-    
-    <a href="#" class="back-top">
+    </section>
+    <a href="#" class="back-to-top">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
     <script src="script.js"></script>
